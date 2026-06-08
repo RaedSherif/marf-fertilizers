@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>marf Liquid Organic Fertilizer — Arafat Agro Allied Services</title>
+  <meta name="description" content="100% organic, chemical-free liquid fertilizer trusted by farmers across Nigeria. Better yields, stronger crops — naturally." />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            marf: {
+              950: '#081a12',
+              900: '#0d2b1f',
+              800: '#1a4731',
+              700: '#2D6A4F',
+              600: '#3d8464',
+              500: '#52B788',
+              400: '#74c99e',
+              300: '#a8dfc0',
+              200: '#D8F3DC',
+              100: '#ecfdf5',
+              gold: '#F4A261',
+              'gold-d': '#e8874a',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,800;1,700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="font-sans text-gray-900 bg-white antialiased">
+
+<!-- ══════════════════════════════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 flex-shrink-0">
+        <div class="flex flex-col leading-none">
+          <span class="font-display font-bold text-2xl text-marf-700 tracking-tight">marf</span>
+          <span class="text-[10px] font-semibold text-marf-500 tracking-widest uppercase leading-none">Liquid Organic</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center gap-1">
+        <a href="#about"   class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_about">About</a>
+        <a href="#gallery" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_gallery">Gallery</a>
+        <a href="#product" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_product">Product</a>
+        <a href="#apply"   class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_apply">How to Apply</a>
+        <a href="#foryou"  class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_foryou">For You</a>
+        <a href="#faq"     class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-marf-700 transition-colors rounded-lg hover:bg-marf-100" data-i18n="nav_contact">Contact</a>
+      </div>
+
+      <!-- Right: Language + CTA -->
+      <div class="flex items-center gap-3">
+        <!-- Language Switcher -->
+        <div class="hidden sm:flex items-center gap-0.5 bg-gray-100 rounded-lg p-0.5">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="ha">HA</button>
+          <button class="lang-btn" data-lang="yo">YO</button>
+          <button class="lang-btn" data-lang="ig">IG</button>
+        </div>
+
+        <!-- Order CTA -->
+        <a href="#contact" class="hidden sm:inline-block btn-gold text-sm py-2 px-5" data-i18n="nav_order">Order Now</a>
+
+        <!-- Hamburger -->
+        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg text-gray-600 hover:bg-marf-100 hover:text-marf-700 transition-colors" aria-label="Menu">
+          <svg id="icon-open" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display:none">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden border-t border-gray-100 bg-white">
+    <div class="px-4 py-3 space-y-1">
+      <a href="#about"   class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_about">About</a>
+      <a href="#gallery" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_gallery">Gallery</a>
+      <a href="#product" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_product">Product</a>
+      <a href="#apply"   class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_apply">How to Apply</a>
+      <a href="#foryou"  class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_foryou">For You</a>
+      <a href="#faq"     class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_faq">FAQ</a>
+      <a href="#contact" class="block px-3 py-2 text-sm font-medium text-gray-700 hover:bg-marf-100 hover:text-marf-700 rounded-lg" data-i18n="nav_contact">Contact</a>
+      <!-- Mobile language -->
+      <div class="flex items-center gap-0.5 bg-gray-100 rounded-lg p-0.5 w-fit mt-2">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ha">HA</button>
+        <button class="lang-btn" data-lang="yo">YO</button>
+        <button class="lang-btn" data-lang="ig">IG</button>
+      </div>
+      <a href="#contact" class="btn-gold block text-center mt-3" data-i18n="nav_order">Order Now</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════════════════ -->
+<section class="hero-section min-h-screen flex flex-col justify-center pt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32 text-white">
+    <div class="max-w-3xl">
+
+      <!-- Eyebrow -->
+      <p class="animate-fade-up inline-flex items-center gap-2 text-xs sm:text-sm font-semibold tracking-widest uppercase text-marf-300 mb-6">
+        <span class="w-6 h-px bg-marf-400 inline-block"></span>
+        <span data-i18n="hero_eyebrow">100% Organic · Chemical-Free · Nigerian Made</span>
+      </p>
+
+      <!-- Headline -->
+      <h1 class="animate-fade-up-delay-1 font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+        <span data-i18n="hero_h1">Feed your soil.</span><br/>
+        <span class="text-marf-400" data-i18n="hero_h2">Grow with marf.</span>
+      </h1>
+
+      <!-- Subheading -->
+      <p class="animate-fade-up-delay-2 text-lg sm:text-xl text-marf-200 max-w-2xl leading-relaxed mb-10" data-i18n="hero_sub">
+        Premium liquid organic fertilizer trusted by farmers and distributors across Nigeria. Stronger crops, better yields — naturally.
+      </p>
+
+      <!-- CTAs -->
+      <div class="animate-fade-up-delay-3 flex flex-wrap gap-4">
+        <a href="#contact" class="btn-gold" data-i18n="hero_cta1">Order Now →</a>
+        <a href="#apply"   class="btn-ghost" data-i18n="hero_cta2">How to Apply</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stats Bar -->
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-16 lg:pb-24">
+    <div class="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20 p-6 grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0">
+      <div class="stat-card text-center lg:text-left">
+        <p class="font-display font-bold text-3xl text-white" data-i18n="stat1_val">100% Organic</p>
+        <p class="text-marf-300 text-sm font-medium mt-1" data-i18n="stat1_lbl">Natural Formula</p>
+      </div>
+      <div class="stat-card text-center lg:text-left">
+        <p class="font-display font-bold text-3xl text-white" data-i18n="stat2_val">40%</p>
+        <p class="text-marf-300 text-sm font-medium mt-1" data-i18n="stat2_lbl">Better Yields</p>
+      </div>
+      <div class="stat-card text-center lg:text-left">
+        <p class="font-display font-bold text-3xl text-white" data-i18n="stat3_val">500+</p>
+        <p class="text-marf-300 text-sm font-medium mt-1" data-i18n="stat3_lbl">Farmers Served</p>
+      </div>
+      <div class="stat-card text-center lg:text-left">
+        <p class="font-display font-bold text-3xl text-white" data-i18n="stat4_val">All Types</p>
+        <p class="text-marf-300 text-sm font-medium mt-1" data-i18n="stat4_lbl">Crop Compatible</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     ABOUT
+══════════════════════════════════════════════════════════════ -->
+<section id="about" class="py-24 bg-marf-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+      <p class="section-label mb-3" data-i18n="about_label">Who We Are</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-marf-800 mb-6" data-i18n="about_title">Growing Nigeria's farms with marf</h2>
+      <p class="text-gray-600 text-lg leading-relaxed" data-i18n="about_desc">
+        Arafat Agro Allied Services Nig Ltd. is a Nigerian agricultural company helping farmers achieve better harvests using 100% organic, chemical-free liquid fertilizer. We believe every Nigerian farmer deserves safe, effective, and affordable inputs.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="feature-card bg-white rounded-2xl p-8 border border-marf-200 reveal">
+        <div class="w-14 h-14 bg-marf-200 rounded-2xl flex items-center justify-center text-2xl mb-6">🌿</div>
+        <h3 class="font-bold text-xl text-marf-800 mb-3" data-i18n="f1_title">100% Natural Formula</h3>
+        <p class="text-gray-600 leading-relaxed" data-i18n="f1_desc">Made from natural organic materials. No harmful chemicals — safe for your soil, crops, family, and livestock.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card bg-white rounded-2xl p-8 border border-marf-200 reveal">
+        <div class="w-14 h-14 bg-marf-200 rounded-2xl flex items-center justify-center text-2xl mb-6">🇳🇬</div>
+        <h3 class="font-bold text-xl text-marf-800 mb-3" data-i18n="f2_title">Proudly Nigerian</h3>
+        <p class="text-gray-600 leading-relaxed" data-i18n="f2_desc">Formulated specifically for Nigerian soils and climate. We understand your land because we're from here.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card bg-white rounded-2xl p-8 border border-marf-200 reveal">
+        <div class="w-14 h-14 bg-marf-200 rounded-2xl flex items-center justify-center text-2xl mb-6">📦</div>
+        <h3 class="font-bold text-xl text-marf-800 mb-3" data-i18n="f3_title">Delivered to Your Farm</h3>
+        <p class="text-gray-600 leading-relaxed" data-i18n="f3_desc">Order by WhatsApp and we'll arrange delivery straight to your farm gate — anywhere in Nigeria.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     GALLERY
+══════════════════════════════════════════════════════════════ -->
+<section id="gallery" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label mb-3" data-i18n="gallery_label">Our Farms &amp; Results</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-marf-800 mb-4" data-i18n="gallery_title">See the difference marf makes</h2>
+      <p class="text-gray-500 text-base" data-i18n="gallery_subtitle">Tap any photo slot to replace it with your own farm photos — before and after, harvest results, happy customers.</p>
+    </div>
+
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+      <!-- Slot 1: Large hero -->
+      <div class="gallery-slot large col-span-2 reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-4xl">🌾</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g1">Hero Farm Photo</p>
+          <p class="text-xs text-marf-500">Replace with your farm landscape</p>
+        </div>
+      </div>
+
+      <!-- Slot 2 -->
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🌱</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g2">Before Planting</p>
+        </div>
+      </div>
+
+      <!-- Slot 3 -->
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🌿</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g3">Growing Crops</p>
+        </div>
+      </div>
+
+      <!-- Slot 4 -->
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🏆</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g4">Harvest Results</p>
+        </div>
+      </div>
+
+      <!-- Slot 5 -->
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">😊</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g5">Happy Farmer</p>
+        </div>
+      </div>
+
+      <!-- Slot 6 -->
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🌽</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g6">Crop Close-up</p>
+        </div>
+      </div>
+
+      <!-- Slot 7 -->
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🚜</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g7">Farm Work</p>
+        </div>
+      </div>
+
+      <!-- Slot 8: Large -->
+      <div class="gallery-slot large col-span-2 reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-4xl">📸</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="g8">Team / Company</p>
+          <p class="text-xs text-marf-500">Replace with team or company photo</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     PRODUCT
+══════════════════════════════════════════════════════════════ -->
+<section id="product" class="py-24 bg-marf-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-4 reveal">
+      <p class="section-label mb-3 text-marf-400" data-i18n="product_label">Our Product</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+      <!-- Left: Product info -->
+      <div class="reveal">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 bg-marf-gold/20 border border-marf-gold/40 rounded-full px-4 py-1.5 mb-6">
+          <span class="text-marf-gold text-xs font-bold tracking-wide" data-i18n="product_badge">Best Seller · Farmer's Choice</span>
+        </div>
+
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-white mb-4" data-i18n="product_title">marf Liquid Organic Fertilizer</h2>
+        <p class="text-marf-300 text-lg mb-6 font-medium" data-i18n="product_subtitle">One powerful formula that works for every Nigerian crop and every type of soil.</p>
+        <p class="text-marf-400 leading-relaxed mb-8" data-i18n="product_desc">
+          A premium liquid fertilizer made from 100% organic materials. Suitable for maize, yam, tomatoes, rice, cassava, vegetables and all crops. Works from the very first application.
+        </p>
+
+        <!-- Crops list -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">🌽 Maize</span>
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">🍠 Yam</span>
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">🍅 Tomatoes</span>
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">🌾 Rice</span>
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">🥬 Cassava</span>
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">🥦 Vegetables</span>
+          <span class="bg-marf-700 text-marf-300 text-xs font-semibold px-3 py-1.5 rounded-full">+ All Crops</span>
+        </div>
+      </div>
+
+      <!-- Right: Benefit cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 reveal">
+
+        <div class="benefit-card bg-marf-700 border-marf-600">
+          <div class="text-3xl mb-3">💪</div>
+          <h4 class="font-bold text-white mb-1" data-i18n="b1_title">Stronger germination</h4>
+          <p class="text-marf-300 text-sm" data-i18n="b1_desc">Seeds sprout faster and healthier from day one</p>
+        </div>
+
+        <div class="benefit-card bg-marf-700 border-marf-600">
+          <div class="text-3xl mb-3">📈</div>
+          <h4 class="font-bold text-white mb-1" data-i18n="b2_title">Up to 40% more yield</h4>
+          <p class="text-marf-300 text-sm" data-i18n="b2_desc">Farmers report significantly larger harvests</p>
+        </div>
+
+        <div class="benefit-card bg-marf-700 border-marf-600">
+          <div class="text-3xl mb-3">🌍</div>
+          <h4 class="font-bold text-white mb-1" data-i18n="b3_title">Improves soil health</h4>
+          <p class="text-marf-300 text-sm" data-i18n="b3_desc">Rebuilds soil biology for long-term fertility</p>
+        </div>
+
+        <div class="benefit-card bg-marf-700 border-marf-600">
+          <div class="text-3xl mb-3">✅</div>
+          <h4 class="font-bold text-white mb-1" data-i18n="b4_title">Safe for everyone</h4>
+          <p class="text-marf-300 text-sm" data-i18n="b4_desc">No chemicals — safe near children, animals, water</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     HOW TO APPLY
+══════════════════════════════════════════════════════════════ -->
+<section id="apply" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+      <p class="section-label mb-3" data-i18n="apply_label">Step-by-Step Guide</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-marf-800 mb-4" data-i18n="apply_title">How to apply marf</h2>
+      <p class="text-gray-500 text-lg" data-i18n="apply_intro">Simple and easy to use. Just follow these 4 steps and your crops will feel the difference from the very first application.</p>
+    </div>
+
+    <!-- Steps -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+
+      <div class="flex flex-col items-center text-center reveal relative">
+        <div class="step-number mb-5">1</div>
+        <div class="text-3xl mb-4">💧</div>
+        <h3 class="font-bold text-lg text-marf-800 mb-2" data-i18n="s1_title">Dilute with Water</h3>
+        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="s1_desc">Mix marf with clean water according to the recommended ratio on the bottle label.</p>
+        <div class="step-connector hidden lg:block"></div>
+      </div>
+
+      <div class="flex flex-col items-center text-center reveal relative">
+        <div class="step-number mb-5">2</div>
+        <div class="text-3xl mb-4">🌅</div>
+        <h3 class="font-bold text-lg text-marf-800 mb-2" data-i18n="s2_title">Apply Early Morning</h3>
+        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="s2_desc">Apply during early morning or late evening to avoid midday heat. This ensures maximum absorption.</p>
+        <div class="step-connector hidden lg:block"></div>
+      </div>
+
+      <div class="flex flex-col items-center text-center reveal relative">
+        <div class="step-number mb-5">3</div>
+        <div class="text-3xl mb-4">🪣</div>
+        <h3 class="font-bold text-lg text-marf-800 mb-2" data-i18n="s3_title">Spray or Pour</h3>
+        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="s3_desc">Use a sprayer for foliar application on leaves, or pour gently around the base of the plant for root feeding.</p>
+        <div class="step-connector hidden lg:block"></div>
+      </div>
+
+      <div class="flex flex-col items-center text-center reveal">
+        <div class="step-number mb-5">4</div>
+        <div class="text-3xl mb-4">📅</div>
+        <h3 class="font-bold text-lg text-marf-800 mb-2" data-i18n="s4_title">Repeat Every 2–3 Weeks</h3>
+        <p class="text-gray-500 text-sm leading-relaxed" data-i18n="s4_desc">Apply regularly throughout the growing season for best results. Consistent use means stronger, healthier crops.</p>
+      </div>
+
+    </div>
+
+    <!-- Application Photos -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">💧</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="ap1">Mixing / Diluting</p>
+          <p class="text-xs text-marf-500">Mixing marf with water</p>
+        </div>
+      </div>
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🪣</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="ap2">Spraying on Crops</p>
+          <p class="text-xs text-marf-500">Applying marf on farm</p>
+        </div>
+      </div>
+      <div class="gallery-slot reveal">
+        <div class="placeholder-img rounded-xl">
+          <span class="text-3xl">🌱</span>
+          <p class="font-semibold text-marf-700 text-sm" data-i18n="ap3">Results After Use</p>
+          <p class="text-xs text-marf-500">Crops after marf application</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tips Box -->
+    <div class="bg-marf-100 border border-marf-200 rounded-2xl p-8 max-w-3xl mx-auto reveal">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="text-2xl">📋</span>
+        <h3 class="font-bold text-xl text-marf-800" data-i18n="tips_title">Important Tips</h3>
+      </div>
+      <ul class="space-y-3">
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-marf-500 font-bold mt-0.5 flex-shrink-0">→</span>
+          <span data-i18n="tip1">Do not apply in direct midday sun — it reduces effectiveness.</span>
+        </li>
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-marf-500 font-bold mt-0.5 flex-shrink-0">→</span>
+          <span data-i18n="tip2">Store in a cool, dry place away from direct sunlight.</span>
+        </li>
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-marf-500 font-bold mt-0.5 flex-shrink-0">→</span>
+          <span data-i18n="tip3">Shake the bottle well before each use to mix the formula.</span>
+        </li>
+        <li class="flex items-start gap-3 text-gray-700">
+          <span class="text-marf-500 font-bold mt-0.5 flex-shrink-0">→</span>
+          <span data-i18n="tip4">For best results, water your crops lightly after application.</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOR YOU
+══════════════════════════════════════════════════════════════ -->
+<section id="foryou" class="py-24 bg-marf-100">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label mb-3" data-i18n="foryou_label">Who It's For</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-marf-800 mb-4" data-i18n="foryou_title">Built for farmers. Backed by distributors.</h2>
+      <p class="text-gray-500 text-lg" data-i18n="foryou_sub">Whether you grow crops or supply agro-inputs, marf is the right partner for you.</p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+      <!-- Farmers Card -->
+      <div class="for-you-card bg-marf-700 text-white reveal">
+        <div class="text-4xl mb-5">👨‍🌾</div>
+        <h3 class="font-display text-3xl font-bold mb-3" data-i18n="far_title">For Farmers</h3>
+        <p class="text-marf-300 mb-6 leading-relaxed" data-i18n="far_desc">marf Liquid Organic Fertilizer helps you get the most from your land every planting season.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="check-item">
+            <div class="check-icon bg-marf-500 text-white">✓</div>
+            <span data-i18n="far_b1">Better yields at harvest time</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-500 text-white">✓</div>
+            <span data-i18n="far_b2">Healthier, stronger crops</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-500 text-white">✓</div>
+            <span data-i18n="far_b3">Improves poor or tired soil</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-500 text-white">✓</div>
+            <span data-i18n="far_b4">Easy to apply — dilute and spray</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-500 text-white">✓</div>
+            <span data-i18n="far_b5">Safe for your family and animals</span>
+          </li>
+        </ul>
+        <a href="#contact" class="btn-gold" data-i18n="far_cta">Order as a Farmer →</a>
+      </div>
+
+      <!-- Distributors Card -->
+      <div class="for-you-card bg-white border border-marf-200 reveal">
+        <div class="text-4xl mb-5">🏪</div>
+        <h3 class="font-display text-3xl font-bold text-marf-800 mb-3" data-i18n="dis_title">For Distributors</h3>
+        <p class="text-gray-500 mb-6 leading-relaxed" data-i18n="dis_desc">Partner with us to bring marf to farmers in your region and grow your agro business.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="check-item">
+            <div class="check-icon bg-marf-200 text-marf-700">✓</div>
+            <span class="text-gray-700" data-i18n="dis_b1">Competitive wholesale pricing</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-200 text-marf-700">✓</div>
+            <span class="text-gray-700" data-i18n="dis_b2">High demand — easy to sell</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-200 text-marf-700">✓</div>
+            <span class="text-gray-700" data-i18n="dis_b3">Marketing support provided</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-200 text-marf-700">✓</div>
+            <span class="text-gray-700" data-i18n="dis_b4">Flexible minimum order quantities</span>
+          </li>
+          <li class="check-item">
+            <div class="check-icon bg-marf-200 text-marf-700">✓</div>
+            <span class="text-gray-700" data-i18n="dis_b5">Direct line to our team</span>
+          </li>
+        </ul>
+        <a href="#contact" class="btn-green" data-i18n="dis_cta">Become a Distributor →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     TESTIMONIALS
+══════════════════════════════════════════════════════════════ -->
+<section id="testimonials" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label mb-3" data-i18n="test_label">What Farmers Say</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-marf-800 mb-4" data-i18n="test_title">Real results from real farms</h2>
+      <p class="text-gray-500 text-lg" data-i18n="test_sub">Don't take our word for it — hear from farmers and distributors across Nigeria.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <div class="testimonial-card reveal">
+        <div class="flex gap-0.5 mb-4 text-marf-gold text-lg">★★★★★</div>
+        <blockquote class="text-gray-700 leading-relaxed mb-6 text-base italic">
+          "I used marf on my maize farm last season and my harvest was the best in 5 years. The plants were taller, the ears were bigger, and I had almost no losses. I will never go back."
+        </blockquote>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-marf-200 rounded-full flex items-center justify-center text-lg">👨‍🌾</div>
+          <div>
+            <p class="font-bold text-marf-800 text-sm">Musa Abdullahi</p>
+            <p class="text-gray-400 text-xs">Maize farmer · Kaduna State</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="flex gap-0.5 mb-4 text-marf-gold text-lg">★★★★★</div>
+        <blockquote class="text-gray-700 leading-relaxed mb-6 text-base italic">
+          "My tomato farm was struggling. After using marf, the plants grew stronger and I got a much bigger yield. My neighbours started asking what my secret was. I told them — it's marf!"
+        </blockquote>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-marf-200 rounded-full flex items-center justify-center text-lg">👩‍🌾</div>
+          <div>
+            <p class="font-bold text-marf-800 text-sm">Fatima Bello</p>
+            <p class="text-gray-400 text-xs">Tomato farmer · Kano State</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="flex gap-0.5 mb-4 text-marf-gold text-lg">★★★★★</div>
+        <blockquote class="text-gray-700 leading-relaxed mb-6 text-base italic">
+          "As a distributor, marf sells itself. Farmers come back every season because they see real results. The wholesale pricing is good and the team is always available. Highly recommend."
+        </blockquote>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 bg-marf-200 rounded-full flex items-center justify-center text-lg">🏪</div>
+          <div>
+            <p class="font-bold text-marf-800 text-sm">Emeka Okafor</p>
+            <p class="text-gray-400 text-xs">Agro distributor · Onitsha, Anambra</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════════════════════════ -->
+<section id="faq" class="py-24 bg-marf-100">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label mb-3" data-i18n="faq_label">Questions &amp; Answers</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-marf-800 mb-4" data-i18n="faq_title">Frequently Asked Questions</h2>
+      <p class="text-gray-500 text-lg" data-i18n="faq_sub">Everything you need to know about marf Liquid Organic Fertilizer.</p>
+    </div>
+
+    <div class="bg-white rounded-2xl border border-marf-200 p-6 sm:p-8 mb-8 reveal">
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-i18n="faq_q1">What exactly is marf Liquid Organic Fertilizer?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p data-i18n="faq_a1">marf is a premium liquid fertilizer made from 100% natural organic materials. It contains no synthetic chemicals and is safe for your soil, crops, family, and livestock. It works by enriching your soil with organic nutrients that plants absorb quickly and efficiently — resulting in stronger growth and better yields.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-i18n="faq_q2">Is marf suitable for all types of crops?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p data-i18n="faq_a2">Yes! marf works on all Nigerian crops including maize, yam, tomatoes, rice, cassava, pepper, groundnut, vegetables, and more. Whether you grow food crops, cash crops, or vegetables, marf improves germination, growth, and yields across all crop types.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-i18n="faq_q3">How long before I see results?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p data-i18n="faq_a3">Many farmers notice stronger growth within 2–3 weeks of the first application. For maximum results, apply consistently throughout the growing season every 2–3 weeks. Soil health improvements continue to build over multiple seasons of use.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-i18n="faq_q4">Do you deliver to my state?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p data-i18n="faq_a4">Yes, we deliver nationwide across all 36 states in Nigeria. Simply order via WhatsApp with your location and quantity, and we'll arrange farm gate delivery. Delivery time varies by location — we'll confirm the timeline when you order.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span data-i18n="faq_q5">Can I use marf with other fertilizers?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p data-i18n="faq_a5">marf is designed to work as your primary fertilizer. It can be used alongside other organic inputs, but we recommend avoiding combination with synthetic chemicals. Send us a WhatsApp message if you'd like specific advice for your crops and situation.</p></div>
+      </div>
+
+      <div class="faq-item border-b-0">
+        <button class="faq-question">
+          <span data-i18n="faq_q6">How do I become a distributor?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p data-i18n="faq_a6">It's easy! Send us a WhatsApp message or fill the contact form selecting 'Distributor / Wholesaler.' Our team will reach out to discuss pricing, minimum order quantities, and how we support distributors with marketing materials and training. We offer competitive wholesale pricing and high farmer demand.</p></div>
+      </div>
+
+    </div>
+
+    <p class="text-center text-gray-500 reveal">
+      <span data-i18n="faq_prompt">Can't find your answer?</span>
+      <a href="https://wa.me/2348022256977" target="_blank" rel="noopener" class="text-marf-700 font-semibold hover:underline ml-1" data-i18n="faq_wa">Send us a WhatsApp message</a>
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     CONTACT / ORDER FORM
+══════════════════════════════════════════════════════════════ -->
+<section id="contact" class="py-24 bg-marf-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+      <p class="section-label text-marf-400 mb-3" data-i18n="contact_label">Get In Touch</p>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-white mb-4" data-i18n="contact_title">Order now or ask us anything</h2>
+      <p class="text-marf-300 text-lg" data-i18n="contact_sub">Send us a WhatsApp message or fill the form below — our team responds quickly.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+      <!-- Left: Contact Info -->
+      <div class="space-y-8 reveal">
+
+        <!-- WhatsApp -->
+        <div class="bg-marf-700/50 border border-marf-600 rounded-2xl p-7">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 bg-[#25D366]/20 rounded-xl flex items-center justify-center">
+              <svg viewBox="0 0 24 24" class="w-5 h-5 fill-[#25D366]"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <div>
+              <p class="font-bold text-white text-sm" data-i18n="wa_label">WhatsApp (fastest)</p>
+              <p class="text-marf-300 text-xs" data-i18n="wa_reply">Reply within minutes · 7 days a week</p>
+            </div>
+          </div>
+          <a href="https://wa.me/2348022256977" target="_blank" rel="noopener" class="wa-btn w-full justify-center">
+            <svg viewBox="0 0 24 24" class="w-5 h-5 fill-white flex-shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            08022256977
+          </a>
+        </div>
+
+        <!-- Company Info -->
+        <div class="bg-marf-700/50 border border-marf-600 rounded-2xl p-7 space-y-5">
+          <div>
+            <p class="text-xs font-bold text-marf-400 uppercase tracking-wider mb-2" data-i18n="co_label">Company</p>
+            <p class="text-white font-semibold">Arafat Agro Allied Services Nig Ltd.</p>
+            <p class="text-marf-300 text-sm">marf Liquid Organic Fertilizers</p>
+          </div>
+          <div>
+            <p class="text-xs font-bold text-marf-400 uppercase tracking-wider mb-2" data-i18n="co_delivery">Delivery</p>
+            <p class="text-white font-semibold" data-i18n="co_delivery_desc">Nationwide · Farm gate delivery</p>
+            <p class="text-marf-300 text-sm" data-i18n="co_delivery_sub">Order on WhatsApp — we arrange the rest</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Form -->
+      <div class="bg-marf-700/50 border border-marf-600 rounded-2xl p-7 reveal">
+        <form id="contact-form" class="space-y-5" novalidate>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="form-field">
+              <label for="f-name" data-i18n="f_name">Your Name</label>
+              <input id="f-name" type="text" name="name" data-i18n-ph="f_name" placeholder="Your Name" required />
+            </div>
+            <div class="form-field">
+              <label for="f-phone" data-i18n="f_phone">Phone Number</label>
+              <input id="f-phone" type="tel" name="phone" data-i18n-ph="f_phone" placeholder="Phone Number" required />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="f-role" data-i18n="f_role">I am a...</label>
+            <select id="f-role" name="role">
+              <option value="" data-i18n="f_role_sel">Select one</option>
+              <option value="Farmer" data-i18n="f_r1">Farmer</option>
+              <option value="Distributor / Wholesaler" data-i18n="f_r2">Distributor / Wholesaler</option>
+              <option value="Other" data-i18n="f_r3">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="f-state" data-i18n="f_state">State / Location</label>
+            <input id="f-state" type="text" name="state" data-i18n-ph="f_state" placeholder="State / Location" required />
+          </div>
+
+          <div class="form-field">
+            <label for="f-msg" data-i18n="f_msg">Message or Order Details</label>
+            <textarea id="f-msg" name="message" rows="4" data-i18n-ph="f_msg" placeholder="Message or Order Details" style="resize:vertical;"></textarea>
+          </div>
+
+          <button type="submit" class="btn-gold w-full text-center" data-i18n="f_submit">Send via WhatsApp →</button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════════════════ -->
+<footer class="bg-marf-950 text-marf-300 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex flex-col leading-none mb-4">
+          <span class="font-display font-bold text-3xl text-white tracking-tight">marf</span>
+          <span class="text-xs font-semibold text-marf-500 tracking-widest uppercase leading-none">Liquid Organic</span>
+        </div>
+        <p class="text-sm leading-relaxed" data-i18n="footer_tagline">100% Organic · Chemical-Free · Nigerian Made</p>
+        <p class="text-xs text-marf-500 mt-2">Arafat Agro Allied Services Nig Ltd.</p>
+      </div>
+
+      <!-- Nav links -->
+      <div>
+        <p class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Quick Links</p>
+        <nav class="grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
+          <a href="#about"         class="hover:text-white transition-colors" data-i18n="nav_about">About</a>
+          <a href="#gallery"       class="hover:text-white transition-colors" data-i18n="nav_gallery">Gallery</a>
+          <a href="#product"       class="hover:text-white transition-colors" data-i18n="nav_product">Product</a>
+          <a href="#apply"         class="hover:text-white transition-colors" data-i18n="nav_apply">How to Apply</a>
+          <a href="#foryou"        class="hover:text-white transition-colors" data-i18n="nav_foryou">For You</a>
+          <a href="#faq"           class="hover:text-white transition-colors" data-i18n="nav_faq">FAQ</a>
+          <a href="#contact"       class="hover:text-white transition-colors" data-i18n="nav_contact">Contact</a>
+        </nav>
+      </div>
+
+      <!-- CTA -->
+      <div>
+        <p class="text-white font-semibold text-sm mb-4 uppercase tracking-wider">Order Now</p>
+        <p class="text-sm mb-4">Reach us directly on WhatsApp — we respond fast, 7 days a week.</p>
+        <a href="https://wa.me/2348022256977" target="_blank" rel="noopener" class="wa-btn text-sm py-2.5 px-5">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 fill-white flex-shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          08022256977
+        </a>
+        <!-- Organic Badge -->
+        <div class="mt-5 inline-flex items-center gap-2 bg-marf-800 border border-marf-700 rounded-full px-4 py-2">
+          <span class="text-base">🌿</span>
+          <span class="text-xs font-semibold text-marf-300" data-i18n="footer_cert">Organic Certified</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="border-t border-marf-800 pt-6 text-center text-xs text-marf-600">
+      <p data-i18n="footer_copy">© 2025 Arafat Agro Allied Services Nig Ltd. All rights reserved.</p>
+    </div>
+
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

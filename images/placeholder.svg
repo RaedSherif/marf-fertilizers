@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#D8F3DC"/>
+  <rect x="0" y="0" width="800" height="500" fill="url(#grid)" opacity="0.3"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#52B788" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <circle cx="400" cy="220" r="54" fill="#52B788" opacity="0.25"/>
+  <rect x="366" y="194" width="68" height="58" rx="6" fill="none" stroke="#2D6A4F" stroke-width="3" opacity="0.5"/>
+  <circle cx="400" cy="216" r="13" fill="none" stroke="#2D6A4F" stroke-width="3" opacity="0.5"/>
+  <polygon points="366,252 388,224 406,240 420,226 434,252" fill="#2D6A4F" opacity="0.35"/>
+  <circle cx="428" cy="202" r="5" fill="#2D6A4F" opacity="0.5"/>
+  <text x="400" y="308" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="15" fill="#2D6A4F" opacity="0.65" font-weight="600">Add your farm photo here</text>
+  <text x="400" y="330" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#2D6A4F" opacity="0.45">Replace this file with a real image</text>
+</svg>
