@@ -3,13 +3,13 @@
 // ── Translations ──────────────────────────────────────────────────────────────
 const T = {
   en: {
-    nav_about: "About", nav_gallery: "Gallery", nav_product: "Product",
+    nav_about: "About", nav_gallery: "Gallery", nav_product: "Products",
     nav_apply: "How to Apply", nav_foryou: "For You", nav_faq: "FAQ",
     nav_contact: "Contact", nav_order: "Order Now",
     hero_eyebrow: "100% Organic · Chemical-Free · Nigerian Made",
     hero_h1: "Feed your soil.", hero_h2: "Grow with marf.",
     hero_sub: "Premium liquid organic fertilizer trusted by farmers and distributors across Nigeria. Stronger crops, better yields — naturally.",
-    hero_cta1: "Order Now →", hero_cta2: "How to Apply",
+    hero_cta1: "Order on WhatsApp →", hero_cta2: "See Products",
     stat1_val: "100% Organic", stat1_lbl: "Natural Formula",
     stat2_val: "40%", stat2_lbl: "Better Yields",
     stat3_val: "500+", stat3_lbl: "Farmers Served",
@@ -22,13 +22,20 @@ const T = {
     f3_title: "Delivered to Your Farm", f3_desc: "Order by WhatsApp and we'll arrange delivery straight to your farm gate — anywhere in Nigeria.",
     gallery_label: "Our Farms & Results",
     gallery_title: "See the difference marf makes",
-    gallery_subtitle: "Tap any photo slot to replace it with your own farm photos — before and after, harvest results, happy customers.",
-    g1: "Hero Farm Photo", g2: "Before Planting", g3: "Growing Crops", g4: "Harvest Results",
-    g5: "Happy Farmer", g6: "Crop Close-up", g7: "Farm Work", g8: "Team / Company",
-    product_label: "Our Product", product_badge: "Best Seller · Farmer's Choice",
-    product_title: "marf Liquid Organic Fertilizer",
-    product_subtitle: "One powerful formula that works for every Nigerian crop and every type of soil.",
-    product_desc: "A premium liquid fertilizer made from 100% organic materials. Suitable for maize, yam, tomatoes, rice, cassava, vegetables and all crops. Works from the very first application.",
+    gallery_subtitle: "Healthy soil, thriving rows, and richer harvests — this is what farms fed with marf look like.",
+    gal1: "Richer harvests, season after season",
+    gal2: "Thriving vegetable rows",
+    gal3: "Strong, healthy plants",
+    product_label: "Our Products",
+    product_title: "One range for every farm",
+    product_subtitle: "Three organic products that feed your soil, grow your crops, and protect your harvest — for every Nigerian crop and soil type.",
+    prod1_badge: "Best Seller", prod1_name: "Organic Liquid Fertilizer NPK",
+    prod1_desc: "Complete NPK nutrition for all crops — stronger roots, faster growth, and bigger harvests from the first application.",
+    prod2_badge: "High Nitrogen", prod2_name: "Organic Fertilizer Urea+",
+    prod2_desc: "Nitrogen-boosted formula for rapid leafy growth — perfect for maize, rice, vegetables and every crop that needs deep green leaves.",
+    prod3_badge: "Crop Protection", prod3_name: "Organic Pesticide",
+    prod3_desc: "Protects your crops from pests naturally — no harsh chemicals, safe for soil, people, livestock and pollinators.",
+    prod_cta: "Get Price on WhatsApp",
     b1_title: "Stronger germination", b1_desc: "Seeds sprout faster and healthier from day one",
     b2_title: "Up to 40% more yield", b2_desc: "Farmers report significantly larger harvests",
     b3_title: "Improves soil health", b3_desc: "Rebuilds soil biology for long-term fertility",
@@ -45,7 +52,6 @@ const T = {
     tip2: "Store in a cool, dry place away from direct sunlight.",
     tip3: "Shake the bottle well before each use to mix the formula.",
     tip4: "For best results, water your crops lightly after application.",
-    ap1: "Mixing / Diluting", ap2: "Spraying on Crops", ap3: "Results After Use",
     foryou_label: "Who It's For",
     foryou_title: "Built for farmers. Backed by distributors.",
     foryou_sub: "Whether you grow crops or supply agro-inputs, marf is the right partner for you.",
@@ -99,13 +105,13 @@ const T = {
   },
 
   ha: {
-    nav_about: "Game da mu", nav_gallery: "Hotuna", nav_product: "Samfuri",
+    nav_about: "Game da mu", nav_gallery: "Hotuna", nav_product: "Kayayyaki",
     nav_apply: "Yadda ake amfani", nav_foryou: "Domin ku", nav_faq: "Tambayoyi",
     nav_contact: "Tuntuɓar mu", nav_order: "Yi oda yanzu",
     hero_eyebrow: "100% Halitta · Ba tare da sinadarai · An yi a Najeriya",
     hero_h1: "Ciyar da ƙasarku.", hero_h2: "Girma tare da marf.",
     hero_sub: "Takin ruwa na halitta na musamman da manoma da masu rarrabawa a duk faɗin Najeriya suka amince da shi. Ƙarin girma, ƙarin amfanin gona — ta hanyar halitta.",
-    hero_cta1: "Yi oda yanzu →", hero_cta2: "Yadda ake amfani",
+    hero_cta1: "Yi oda ta WhatsApp →", hero_cta2: "Duba Kayayyaki",
     stat1_val: "100% Halitta", stat1_lbl: "Formula na Halitta",
     stat2_val: "40%", stat2_lbl: "Ƙarin Amfanin Gona",
     stat3_val: "500+", stat3_lbl: "Manoman da aka yi wa hidima",
@@ -118,13 +124,20 @@ const T = {
     f3_title: "Isar da shi zuwa gona", f3_desc: "Yi oda ta WhatsApp kuma za mu shirya isar da shi kai tsaye zuwa ƙofar gona — ko'ina a Najeriya.",
     gallery_label: "Gonakinmu da Sakamako",
     gallery_title: "Duba bambancin da marf ke yi",
-    gallery_subtitle: "Duba hotunan gonakin da marf ya ƙara musu ƙarfi — kafin da bayan amfani, sakamakon girbi, da manoman farin ciki.",
-    g1: "Babban Hoton Gona", g2: "Kafin Shuka", g3: "Girman Amfanin Gona", g4: "Sakamakon Girbi",
-    g5: "Manomi Mai Farin Ciki", g6: "Kusa da Amfanin Gona", g7: "Aiki a Gona", g8: "Ƙungiya / Kamfani",
-    product_label: "Samfurinmu", product_badge: "Mafi kyau · Zaɓin Manomi",
-    product_title: "marf Takin Ruwa na Halitta",
-    product_subtitle: "Wata ƙarfin formula ɗaya da ke aiki don kowane amfanin gona na Najeriya da kowane nau'in ƙasa.",
-    product_desc: "Takin ruwa na musamman da aka yi daga kayan halitta 100%. Ya dace don masara, doya, tumatir, shinkafa, rogo, kayan lambu da duk amfanin gona. Yana aiki daga farkon amfani.",
+    gallery_subtitle: "Ƙasa mai lafiya, amfanin gona mai bunƙasa, da girbi mai yawa — haka gonakin da ke amfani da marf suke.",
+    gal1: "Girbi mai yawa, kowane lokaci",
+    gal2: "Layukan kayan lambu masu bunƙasa",
+    gal3: "Tsirrai masu ƙarfi da lafiya",
+    product_label: "Kayayyakinmu",
+    product_title: "Kayayyaki uku domin kowace gona",
+    product_subtitle: "Kayayyaki uku na halitta da ke ciyar da ƙasarku, haɓaka amfanin gonarku, da kare girbinku — domin kowane amfanin gona da kowace ƙasa a Najeriya.",
+    prod1_badge: "Mafi Sayarwa", prod1_name: "Takin Ruwa na Halitta NPK",
+    prod1_desc: "Cikakken abinci na NPK domin duk amfanin gona — tushe mai ƙarfi, saurin girma, da girbi mai yawa daga amfani na farko.",
+    prod2_badge: "Nitrogen Mai Yawa", prod2_name: "Takin Halitta Urea+",
+    prod2_desc: "Formula mai yawan nitrogen domin saurin girman ganye — ya dace da masara, shinkafa, kayan lambu da duk amfanin gona mai bukatar ganye kore.",
+    prod3_badge: "Kariyar Amfanin Gona", prod3_name: "Maganin Kwari na Halitta",
+    prod3_desc: "Yana kare amfanin gonarku daga kwari ta hanyar halitta — babu sinadarai masu tsanani, lafiya ga ƙasa, mutane, dabbobi da ƙudan zuma.",
+    prod_cta: "Samu Farashi a WhatsApp",
     b1_title: "Ƙarfin tsiro", b1_desc: "Iri suna tsiro da sauri kuma da lafiya daga farkon rana",
     b2_title: "Har zuwa 40% ƙarin girbi", b2_desc: "Manoma sun ba da rahoton girbi da ya fi girma",
     b3_title: "Inganta lafiyar ƙasa", b3_desc: "Gina ilimin halittar ƙasa don haihuwa na dogon lokaci",
@@ -141,7 +154,6 @@ const T = {
     tip2: "Ajiye a wurin sanyi, mai bushe nesa da hasken rana.",
     tip3: "Girgiza kwalban da kyau kafin kowace amfani don gauraya formula.",
     tip4: "Don mafi kyau sakamako, ban ruwa a hankali bayan amfani.",
-    ap1: "Gauraya / Narkarwa", ap2: "Fesa a Amfanin Gona", ap3: "Sakamakon Bayan Amfani",
     foryou_label: "Domin Wane",
     foryou_title: "An gina shi don manoma. An tallafa shi ta masu rarrabawa.",
     foryou_sub: "Ko kun shuka amfanin gona ko kuna siyar da kayan noma, marf shine abokin tarayya da ya dace.",
@@ -195,13 +207,13 @@ const T = {
   },
 
   yo: {
-    nav_about: "Nipa wa", nav_gallery: "Aworan", nav_product: "Ọja",
+    nav_about: "Nipa wa", nav_gallery: "Aworan", nav_product: "Àwọn Ọjà",
     nav_apply: "Bii o ṣe lo", nav_foryou: "Fun Ọ", nav_faq: "Awọn Ibeere",
     nav_contact: "Kan si wa", nav_order: "Paṣẹ bayi",
     hero_eyebrow: "100% Adayeba · Ko si kemika · Iṣẹ Naijiria",
     hero_h1: "Jẹ ki ilẹ rẹ jẹun.", hero_h2: "Dagba pẹlu marf.",
     hero_sub: "Ajile olomi Organic didi ti awọn agbe ati awọn onipin jakejado Naijiria gbẹkẹle. Irugbin to lagbara, ikore to dara — nipa ti ẹda.",
-    hero_cta1: "Paṣẹ bayi →", hero_cta2: "Bii o ṣe lo",
+    hero_cta1: "Paṣẹ lori WhatsApp →", hero_cta2: "Wo Àwọn Ọjà",
     stat1_val: "100% Adayeba", stat1_lbl: "Formula Adayeba",
     stat2_val: "40%", stat2_lbl: "Ikore to dara si",
     stat3_val: "500+", stat3_lbl: "Awọn Agbe ti a Ṣe iranlọwọ",
@@ -214,13 +226,20 @@ const T = {
     f3_title: "Ti a fi ranṣẹ si oko rẹ", f3_desc: "Paṣẹ nipasẹ WhatsApp a si yoo ṣeto ifijiṣẹ taara si ẹnu-ọna oko rẹ — nibikibi ni Naijiria.",
     gallery_label: "Awọn Oko ati Awọn Abajade Wa",
     gallery_title: "Ri iyatọ ti marf n ṣe",
-    gallery_subtitle: "Wo awọn fọto ti awọn oko ti marf ti ṣe iranlọwọ fun — ṣaaju ati lẹhin lilo, awọn abajade ikore, awọn agbe ti o nifẹ.",
-    g1: "Fọto Oko Akọkọ", g2: "Ṣaaju Gbingbin", g3: "Irugbin ti n Dagba", g4: "Awọn Abajade Ikore",
-    g5: "Agbe Ayọ", g6: "Irugbin Nitosi", g7: "Iṣẹ Oko", g8: "Ẹgbẹ / Ile-iṣẹ",
-    product_label: "Ọja Wa", product_badge: "Oluwaja to dara julo · Yiyan Agbe",
-    product_title: "marf Ajile Olomi Organic",
-    product_subtitle: "Formula kan ti o lagbara ti o ṣiṣẹ fun gbogbo irugbin Naijiria ati gbogbo iru ilẹ.",
-    product_desc: "Ajile olomi ti o ga julọ ti a ṣe lati awọn ohun elo Organic 100%. Dara fun oka, isu, tomati, iresi, agbalumo, ẹfọ ati gbogbo irugbin. O ṣiṣẹ lati iṣedede akọkọ.",
+    gallery_subtitle: "Ilẹ̀ to ni ilera, irugbin to n gbilẹ̀, ati ikore to pọ̀ — báyìí ni oko ti o n lo marf ṣe rí.",
+    gal1: "Ikore to pọ̀, ni gbogbo akoko",
+    gal2: "Awọn ila ẹfọ to n gbilẹ̀",
+    gal3: "Awọn ohun ọgbin to lagbara, to ni ilera",
+    product_label: "Àwọn Ọjà Wa",
+    product_title: "Àwọn ọjà mẹta fun gbogbo oko",
+    product_subtitle: "Àwọn ọjà Organic mẹta ti o n bọ́ ilẹ̀ rẹ, mu irugbin rẹ dagba, ti o si n dabobo ikore rẹ — fun gbogbo irugbin ati ilẹ̀ Naijiria.",
+    prod1_badge: "To N Ta Julọ", prod1_name: "Ajile Olomi Organic NPK",
+    prod1_desc: "Ounjẹ NPK pipe fun gbogbo irugbin — gbongbo to lagbara, idagbasoke kiakia, ati ikore nla lati ilo akọkọ.",
+    prod2_badge: "Nitrogen Giga", prod2_name: "Ajile Organic Urea+",
+    prod2_desc: "Formula to kun fun nitrogen fun idagbasoke ewe kiakia — o dara fun oka, iresi, ẹfọ ati gbogbo irugbin to nilo ewe alawọ̀ dudu.",
+    prod3_badge: "Idaabobo Irugbin", prod3_name: "Oogun Kokoro Organic",
+    prod3_desc: "O n dabobo irugbin rẹ lọwọ kokoro nipa ti ẹda — ko si kemika lile, o ni aabo fun ilẹ̀, eniyan, ẹran ati awọn oyin.",
+    prod_cta: "Gba Iye Owo lori WhatsApp",
     b1_title: "Irugbin to lagbara", b1_desc: "Awọn irugbin n dagba ni iyara ati ni ilera lati ọjọ akọkọ",
     b2_title: "To 40% ikore to pọ si", b2_desc: "Awọn agbe ṣe ijabọ awọn ikore to tobi julọ",
     b3_title: "Ilọsiwaju ilera ilẹ", b3_desc: "Tun ilana ẹkọ ilẹ ṣe fun ilora igba pipẹ",
@@ -237,7 +256,6 @@ const T = {
     tip2: "Fi pamọ ni ibi ti o tutu, ti o gbẹ jinna si imọlẹ oorun taara.",
     tip3: "Gbọn igo naa daradara ṣaaju lilo kọọkan lati dapọ formula.",
     tip4: "Fun awọn abajade to dara julo, fi omi diẹ fun awọn irugbin rẹ lẹhin lilo.",
-    ap1: "Dapọ / Ta", ap2: "Fún sori Irugbin", ap3: "Awọn Abajade Lẹhin Lilo",
     foryou_label: "Fun Tani",
     foryou_title: "Ti a kọ fun awọn agbe. Ti awọn onipin ṣe atilẹyin.",
     foryou_sub: "Boya o gbin irugbin tabi o n pese awọn ipese agro, marf ni alabaṣepọ to tọ fun ọ.",
@@ -297,7 +315,7 @@ const T = {
     hero_eyebrow: "100% Ọchịchọ · Enweghị kemịkal · Emere na Naịjirịa",
     hero_h1: "Nyefee ala gị nri.", hero_h2: "Tolitere ya na marf.",
     hero_sub: "Ajị mmiri Organic dị elu nke ndị ọrụ ugbo na ndị nkesa n'oge Nigeria tụkwasịrị obi n'ya. Ihe ọkụkụ siri ike, ihe ọ mụrụ dị ọma — n'ụdị nke ya.",
-    hero_cta1: "Nyefee ugbu a →", hero_cta2: "Otu esi etinye ya",
+    hero_cta1: "Nye ọrụ na WhatsApp →", hero_cta2: "Lee Ngwaahịa",
     stat1_val: "100% Ọchịchọ", stat1_lbl: "Formula Ọchịchọ",
     stat2_val: "40%", stat2_lbl: "Ihe ọmụmụ ka mma",
     stat3_val: "500+", stat3_lbl: "Ndị ọrụ ugbo e nyere aka",
@@ -310,13 +328,20 @@ const T = {
     f3_title: "Ezitere n'ugbo gị", f3_desc: "Nye ọrụ na WhatsApp anyị ga-ahazi nnyefe ozugbo n'ọnụ ọụzọ ugbo gị — ebe ọ bụla na Naịjirịa.",
     gallery_label: "Ugbo anyị na Nsonaazụ",
     gallery_title: "Hụ ọdịiche marf na-eme",
-    gallery_subtitle: "Hụ foto nke ugbo ebe marf enyere aka — tupu na mgbe ntinye, nsonaazụ ịhịa, ndị ọrụ ugbo na-atọ ụtọ.",
-    g1: "Foto Ugbo Buru Ibu", g2: "Tupu Ịkụ Osisi", g3: "Ihe ọkụkụ na-eto eto", g4: "Nsonaazụ Ịhịa",
-    g5: "Onye ọrụ ugbo na-atọ ụtọ", g6: "Ihe ọkụkụ nso", g7: "Ọrụ Ugbo", g8: "Otu / Ụlọ ọrụ",
-    product_label: "Ngwaahịa anyị", product_badge: "Onye Ọrịa kachasị · Nhọrọ Ndị Ọrụ Ugbo",
-    product_title: "marf Ajị Mmiri Organic",
-    product_subtitle: "Otu formula siri ike na-arụ ọrụ maka ihe ọkụkụ Naịjirịa niile na ụdị ala niile.",
-    product_desc: "Ajị mmiri dị elu emere site n'ihe ndị Organic 100%. Dị mma maka ọka, ji, tomato, osikapa, akpụ, akwụkwọ nri na ihe ọkụkụ niile. Na-arụ ọrụ site n'ntinye mbụ.",
+    gallery_subtitle: "Ala dị mma, ihe ọkụkụ na-eto eto, na owuwe ihe ubi buru ibu — otú a ka ugbo ndị na-eji marf dị.",
+    gal1: "Owuwe ihe ubi buru ibu, oge ọ bụla",
+    gal2: "Ahịrị akwụkwọ nri na-eto eto",
+    gal3: "Osisi siri ike, dị mma",
+    product_label: "Ngwaahịa anyị",
+    product_title: "Ngwaahịa atọ maka ugbo ọ bụla",
+    product_subtitle: "Ngwaahịa organic atọ na-azụ ala gị, na-eto ihe ọkụkụ gị, ma na-echebe owuwe ihe ubi gị — maka ihe ọkụkụ na ala Naịjirịa niile.",
+    prod1_badge: "Kacha Ere", prod1_name: "Ajị Mmiri Organic NPK",
+    prod1_desc: "Nri NPK zuru oke maka ihe ọkụkụ niile — mgbọrọgwụ siri ike, uto ngwa ngwa, na owuwe ihe ubi buru ibu site na ntinye mbụ.",
+    prod2_badge: "Nitrogen Dị Elu", prod2_name: "Ajị Organic Urea+",
+    prod2_desc: "Formula nwere nitrogen dị elu maka uto akwụkwọ ngwa ngwa — dị mma maka ọka, osikapa, akwụkwọ nri na ihe ọkụkụ ọ bụla chọrọ akwụkwọ ndụ ndụ.",
+    prod3_badge: "Nchebe Ihe Ọkụkụ", prod3_name: "Ọgwụ Ahụhụ Organic",
+    prod3_desc: "Na-echebe ihe ọkụkụ gị pụọ n'ahụhụ n'ụzọ nkịtị — enweghị kemịkal siri ike, dị mma maka ala, ndị mmadụ, anụ ụlọ na aṅụ.",
+    prod_cta: "Nweta Ọnụ Ahịa na WhatsApp",
     b1_title: "Ọmụmụ siri ike", b1_desc: "Mkpụrụ osisi na-emepụta ngwa ngwa ma dị mma site n'ụbọchị mbụ",
     b2_title: "Ọ ruru 40% ihe ọmụmụ ọzọ", b2_desc: "Ndị ọrụ ugbo na-akọ ihe ọ mụrụ buru ibu karịa",
     b3_title: "Na-eme ka ala dị mma", b3_desc: "Na-eme ka ihe dị ndụ ala dị mma maka ọọzụzụ ogologo oge",
@@ -333,7 +358,6 @@ const T = {
     tip2: "Chekwaa ya n'ọnọdụ oyi, kọọrọ n'anya ọkụ anyanwụ ozugbo.",
     tip3: "Kpọọ karama nke ọma tupu itinye ya ọ bụla iji tụkọ formula.",
     tip4: "Maka nsonaazụ ka mma, kụzie ihe ọkụkụ gị nwayọ mgbe ntinye gasịrị.",
-    ap1: "Itụkọ / Ịgbatịe", ap2: "Ịgba Ihe ọkụkụ", ap3: "Nsonaazụ Mgbe Ntinye",
     foryou_label: "Maka Onye",
     foryou_title: "Ewuolere maka ndị ọrụ ugbo. Ndị nkesa kwadoro ya.",
     foryou_sub: "Ma ọ bụ na ị na-akụ ihe ọkụkụ ma ọ bụ na-ebere ngwaahịa ugbo, marf bụ onye mmekọ kwesịrị ịdị maka gị.",
@@ -387,6 +411,12 @@ const T = {
   }
 };
 
+// ── Analytics helper (GA4 + Clarity, no-ops when not configured) ───────────
+function track(eventName, params) {
+  if (typeof window.gtag === 'function') window.gtag('event', eventName, params || {});
+  if (typeof window.clarity === 'function') window.clarity('event', eventName);
+}
+
 // ── Current language ────────────────────────────────────────────────────────
 let currentLang = 'en';
 
@@ -425,6 +455,7 @@ function initMobileMenu() {
 
   btn.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(isOpen));
     iconOpen.style.display = isOpen ? 'none' : 'block';
     iconClose.style.display = isOpen ? 'block' : 'none';
   });
@@ -433,6 +464,7 @@ function initMobileMenu() {
   menu.querySelectorAll('a').forEach(a => {
     a.addEventListener('click', () => {
       menu.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
       iconOpen.style.display = 'block';
       iconClose.style.display = 'none';
     });
@@ -442,12 +474,22 @@ function initMobileMenu() {
 // ── FAQ Accordion ───────────────────────────────────────────────────────────
 function initFAQ() {
   document.querySelectorAll('.faq-item').forEach(item => {
-    item.querySelector('.faq-question').addEventListener('click', () => {
+    const q = item.querySelector('.faq-question');
+    q.setAttribute('aria-expanded', 'false');
+    q.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
       // Close all
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
       // Open clicked if it was closed
-      if (!isOpen) item.classList.add('open');
+      if (!isOpen) {
+        item.classList.add('open');
+        q.setAttribute('aria-expanded', 'true');
+        const key = q.querySelector('[data-i18n]');
+        track('faq_open', { question: key ? key.dataset.i18n : 'unknown' });
+      }
     });
   });
 }
@@ -455,7 +497,23 @@ function initFAQ() {
 // ── Language Switcher ───────────────────────────────────────────────────────
 function initLangSwitcher() {
   document.querySelectorAll('.lang-btn').forEach(btn => {
-    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+    btn.addEventListener('click', () => {
+      applyLang(btn.dataset.lang);
+      track('language_change', { language: btn.dataset.lang });
+      if (typeof window.clarity === 'function') window.clarity('set', 'language', btn.dataset.lang);
+    });
+  });
+}
+
+// ── WhatsApp Click Tracking ─────────────────────────────────────────────────
+function initWhatsAppTracking() {
+  document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+    a.addEventListener('click', () => {
+      track('whatsapp_click', {
+        location: a.dataset.track || 'other',
+        language: currentLang,
+      });
+    });
   });
 }
 
@@ -482,6 +540,7 @@ function initContactForm() {
       `Message: ${message}`,
     ];
     const text = encodeURIComponent(lines.join('\n'));
+    track('generate_lead', { role: role || 'unspecified', state, language: currentLang });
     window.open(`https://wa.me/2348022256977?text=${text}`, '_blank');
   });
 }
@@ -520,6 +579,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMobileMenu();
   initFAQ();
   initLangSwitcher();
+  initWhatsAppTracking();
   initContactForm();
   initReveal();
   initSmoothScroll();

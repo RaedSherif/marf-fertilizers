@@ -33,9 +33,27 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 
 /* ── Hero ── */
 .hero-section {
-  background: linear-gradient(150deg, #0d2b1f 0%, #1a4731 35%, #2D6A4F 70%, #3d8464 100%);
+  background:
+    linear-gradient(150deg, rgba(8,26,18,0.93) 0%, rgba(13,43,31,0.85) 35%, rgba(26,71,49,0.72) 70%, rgba(45,106,79,0.55) 100%),
+    url('images/farm-fields.jpg') center / cover no-repeat;
+  background-color: #0d2b1f;
   position: relative;
   overflow: hidden;
+}
+@media (max-width: 640px) {
+  .hero-section {
+    background-image:
+      linear-gradient(150deg, rgba(8,26,18,0.93) 0%, rgba(13,43,31,0.85) 35%, rgba(26,71,49,0.74) 70%, rgba(45,106,79,0.6) 100%),
+      url('images/farm-fields-mobile.jpg');
+  }
+}
+
+/* Hero product bottle card */
+.hero-bottle {
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.45);
+  transform: rotate(3deg);
+  border: 4px solid rgba(255,255,255,0.9);
 }
 .hero-section::before {
   content: '';
@@ -112,6 +130,84 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 .gallery-slot.large img {
   height: 280px;
 }
+
+/* ── Product Cards ── */
+.product-card {
+  background: #1a4731;
+  border: 1px solid #2D6A4F;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+  border-color: #52B788;
+}
+.product-card .product-photo {
+  position: relative;
+  background: #fff;
+}
+.product-card .product-photo img {
+  width: 100%;
+  height: 290px;
+  object-fit: contain;
+  display: block;
+  padding: 1rem 0;
+}
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.8rem;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #F4A261, #e8874a);
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.product-badge.badge-green { background: linear-gradient(135deg, #2D6A4F, #52B788); }
+.product-badge.badge-blue  { background: linear-gradient(135deg, #1d4ed8, #3b82f6); }
+
+/* ── Gallery captions ── */
+.gallery-slot { position: relative; }
+.gallery-slot figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 1.5rem 1rem 0.8rem;
+  background: linear-gradient(to top, rgba(8,26,18,0.75), transparent);
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+/* ── Floating WhatsApp Button ── */
+.wa-float {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 90;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37,211,102,0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.wa-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 28px rgba(37,211,102,0.55);
+}
+.wa-float svg { width: 30px; height: 30px; fill: white; }
 
 /* ── Benefit Cards ── */
 .benefit-card {
@@ -262,7 +358,7 @@ body { font-family: 'Inter', system-ui, sans-serif; }
   border-radius: 10px;
   padding: 0.75rem 1rem;
   color: white;
-  font-size: 0.95rem;
+  font-size: 1rem; /* ≥16px prevents iOS auto-zoom on focus */
   font-family: inherit;
   outline: none;
   transition: border-color 0.2s ease, background 0.2s ease;
@@ -433,9 +529,38 @@ body { font-family: 'Inter', system-ui, sans-serif; }
 .border-marf-light { border-color: #D8F3DC; }
 .text-gold       { color: #F4A261; }
 
+/* ── Accessibility ── */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #F4A261;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+}
+
 /* ── Responsive ── */
 @media (max-width: 768px) {
   .hero-section::after { display: none; }
   .step-connector { display: none; }
   .for-you-card { padding: 2rem 1.5rem; }
+  .lang-btn { padding: 0.55rem 0.8rem; } /* ≥44px tap target with container */
+}
+@media (max-width: 640px) {
+  /* nav Order button is hidden below sm, so this only affects section CTAs */
+  .btn-gold, .btn-green, .btn-ghost {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }
